@@ -11,6 +11,7 @@ class Ball {
     this.y= y;
     this.radius=radius;
     this.image=loadImage("Paperball.png")
+    //this.body=Bodies.circle(this.x,this.y,this.radius,options);
 
     //this.body = Bodies.rectangle(x, y, width , height,{isStatic:true} );
 
@@ -29,8 +30,8 @@ class Ball {
     //stroke("purple");
     //ellipseMode(RADIUS);
     //ellipse(0,0,this.radius);
-    ImageMode(CENTER);
-    image(this.image,0,0,this.width,this.height);
+    imageMode(CENTER);
+    image(this.image,0,0,this.radius,this.radius);
     pop();
   }
 };
